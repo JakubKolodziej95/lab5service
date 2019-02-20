@@ -6,6 +6,8 @@ import { IrishComponent } from './irish/irish.component';
 import { EnglishComponent } from './english/english.component';
 import { FormsModule } from '@angular/forms';
 
+import { HalfService } from './Services/half.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [HalfService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
